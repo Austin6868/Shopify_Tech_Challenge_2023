@@ -1,0 +1,15 @@
+{% extends 'Logi_App/base.html' %}
+
+{% block content %}
+
+ <div class="container" style="width:400px">
+    <div class="body">
+    <h4 class="title">{{ post.name }}</h4>
+    <p class="text">Description: {{ post.description }}</p>
+        <p class="text">Warehouse: {{ post.warehouse }}</p>
+        <p class="text">City: {{ post.warehouse.city }}</p>
+        <p class="text">State: {{ post.warehouse.state }}</p>
+    </div>
+ </div>
+
+{% endblock %}
