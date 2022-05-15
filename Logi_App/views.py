@@ -39,3 +39,21 @@ class Delete(DeleteView):
     pk_url_kwarg = 'pk'
     success_url = reverse_lazy('Logi_App:posts')
     template_name = 'Logi_App/confirm-delete.html'
+
+class AddWarehouse(CreateView):
+    model = Warehouse
+    template_name = 'Logi_App/add_warehouse.html'
+    fields = '__all__'
+    success_url = reverse_lazy('Logi_App:posts_warehouse')
+
+class DeleteWarehouse(DeleteView):
+    model = Warehouse
+    pk_url_kwarg = 'pk'
+    success_url = reverse_lazy('Logi_App:posts_warehouse')
+    template_name = 'Logi_App/confirm-delete.html'
+
+class PostWarehouse(ListView):
+    model = Warehouse
+    template_name = "Logi_App/posts_warehouse.html"
+    context_object_name = 'post_list'
+

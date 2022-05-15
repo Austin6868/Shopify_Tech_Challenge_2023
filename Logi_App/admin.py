@@ -7,4 +7,6 @@ from .models import Warehouse
 class PostAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('name',), }
 
-admin.site.register(Warehouse)
+@admin.register(Warehouse)
+class WarehouseAdmin(admin.ModelAdmin):
+    prepopulated_fields = {'slug': ('name',), }

@@ -1,0 +1,22 @@
+{% extends 'Logi_App/base.html' %}
+
+{% block content %}
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand">Item Admin</a>
+          <a class="nav-link" href = "{% url 'Logi_App:add_warehouse' %}">Add New Warehouse</a>
+      </nav>
+    </div>
+
+    {% for post in post_list %}
+    <div class="container pt-5 my-2" style="width: 18rem;">
+    <div class="'col-md-4">
+    <div class="card-body">
+        <h5 class="card-title">{{post.name}}</h5>
+        <a class="btn btn-primary" href = "{% url 'Logi_App:confirm-delete_warehouse' post.pk %}">Delete</a>
+    </div>
+    </div>
+    </div>
+    {% endfor %}
+
+{% endblock %}
