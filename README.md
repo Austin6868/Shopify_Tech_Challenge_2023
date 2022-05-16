@@ -2,7 +2,7 @@
 The project is deployed at the webpage: https://shopifytechchallenge2023.austin6868.repl.co/
 
 ## Home Page
-The homepage allows users to read a list of the items/inventory located in different warehouses, users are able to push "Go to Item" to examine the name of the item, city, as well as the state of the item.
+The homepage allows users to read a list of the items/inventory located in different warehouses, users are able to push "Go to Item" to examine the name of the item, city, as well as the state the item belongs to.
 
 ## Manage Items Page
 - Users are able to create, update and delete the existing items. 
