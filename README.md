@@ -1,4 +1,4 @@
-# Shopify_Tech_Challenge_2023
+# Shopify_Tech_Challenge_2022
 The project is deployed at the webpage: https://shopifytechchallenge2023.austin6868.repl.co/
 
 ## Home Page
